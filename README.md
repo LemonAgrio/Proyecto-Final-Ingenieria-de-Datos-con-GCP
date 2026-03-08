@@ -45,7 +45,9 @@ Los datos refinados en el Data Warehouse son consumidos por Looker Studio para r
 
 <img width="2531" height="1230" alt="image" src="https://github.com/user-attachments/assets/dc4833c4-91e7-47e4-ac64-be1aa457068b" />
 
-## Technology Stacks
+## Especificaciones técnicas
+
+### Technology Stacks
 * Compute Engine
 * Pub/sub
 * BigQuery
@@ -53,7 +55,7 @@ Los datos refinados en el Data Warehouse son consumidos por Looker Studio para r
 * IAM
 * Cloud Monitoring
 
-## Key Features
+### Key Features
 * Integración Híbrida/Multicloud: Arquitectura diseñada para conectar entornos externos (Simulación On-premise en VM) con el ecosistema de Google Cloud.
 * Ingesta por Streaming en Tiempo Real: Captura y procesamiento inmediato de activos financieros (BNB, WBTC, BCH) con latencia mínima.
 * Arquitectura de Medallón (Lakehouse): Organización de datos en capas (Bronze, Silver) para garantizar la trazabilidad y calidad de la información.
