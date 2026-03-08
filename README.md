@@ -21,3 +21,15 @@ Instalamos las herramientas de entorno virtuales:
 
 Se configuró un bucket en Cloud Storage para el almacenamiento de los archivos JSON originales, garantizando un histórico inalterable de los datos ingeridos a través de la API.4
 <img width="2552" height="1331" alt="image" src="https://github.com/user-attachments/assets/d45329af-052b-4ceb-aa73-45219558e9d5" />
+
+### Mensajería (Pub/Sub)
+
+Se ha implementado una arquitectura de desacoplamiento de componentes mediante el uso de Pub/Sub - BigQuery. Este servicio gestiona el flujo de eventos entre la extracción y el almacenamiento, asegurando la integridad de los mensajes y permitiendo una ingesta asíncrona hacia Bigquery
+
+<img width="2551" height="1324" alt="image" src="https://github.com/user-attachments/assets/7aa15c47-2ea5-43a8-b0fd-a55f2fffdba6" />
+
+### Almacenamiento Analítico (BigQuery)
+
+Como etapa final del pipeline, se implementó un Data Warehouse en BigQuery, estructurado mediante el conjunto de datos stock_analysis y la tabla cryptostreaming.
+
+<img width="2553" height="1334" alt="image" src="https://github.com/user-attachments/assets/e7bd2f30-f822-4185-9b42-354d164c0643" />
