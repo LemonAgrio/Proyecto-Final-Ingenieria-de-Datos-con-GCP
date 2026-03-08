@@ -37,8 +37,4 @@ Como etapa final del pipeline, se implementó un Data Warehouse en BigQuery, est
 ### Implementación y Ejecución del Pipeline:
 Una vez configurado el entorno virtual (venv_sd), se procedió a la integración del script de Python con la infraestructura de GCP. Se actualizó el código con el Topic ID correspondiente de Cloud Pub/Sub y se ejecutó el proceso para iniciar la ingesta de datos financieros en tiempo real hacia la nube.
 
-<img width="2548" height="1441" alt="image" src="https://github.com/user-attachments/assets/6e9b6925-810e-4e32-b4dd-151325bc2df2" />
-
-
-
-<img width="2553" height="1334" alt="image" src="https://github.com/user-attachments/assets/e7bd2f30-f822-4185-9b42-354d164c0643" />
+<img width="2548" height="1441" alt="image" src="https://github.com/user-attachments/assets/34379052-46ba-4edc-a6bd-5558545803f8" />
