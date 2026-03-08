@@ -3,7 +3,7 @@ Una empresa del sector financiero opera actualmente bajo un modelo On-premise / 
 ## Problema
 * **Latencia:** Imposibilidad de reaccionar a la volatilidad de activos (criptomonedas) en tiempo real.
 * **Silos de Información:** Los datos están atrapados en el entorno local sin una ruta hacia un Data Warehouse analítico.
-##Solucion
+## Solucion
 * **Extracción y Origen (Compute Engine + API)** 
 Se configuró una instancia de VM que ejecuta un script de Python. Este script se conecta a una API financiera para obtener datos en tiempo real.
 
@@ -44,3 +44,20 @@ Una vez configurado el entorno virtual (venv_sd), se procedió a la integración
 Los datos refinados en el Data Warehouse son consumidos por Looker Studio para representar la "Capa Gold" de nuestra arquitectura. Este entorno de visualización se conecta de forma nativa a BigQuery, permitiendo monitorear tendencias históricas y fluctuaciones actuales de los activos mediante gráficos de series temporales y KPIs de rendimiento automatizados.
 
 <img width="2531" height="1230" alt="image" src="https://github.com/user-attachments/assets/dc4833c4-91e7-47e4-ac64-be1aa457068b" />
+
+## Technology Stacks
+* Compute Engine
+* Pub/sub
+* BigQuery
+* LookerStudio
+* IAM
+* Cloud Monitoring
+
+## Key Features
+* Integración Híbrida/Multicloud: Arquitectura diseñada para conectar entornos externos (Simulación On-premise en VM) con el ecosistema de Google Cloud.
+* Ingesta por Streaming en Tiempo Real: Captura y procesamiento inmediato de activos financieros (BNB, WBTC, BCH) con latencia mínima.
+* Arquitectura de Medallón (Lakehouse): Organización de datos en capas (Bronze, Silver) para garantizar la trazabilidad y calidad de la información.
+* Persistencia y Respaldo (Capa Bronze): Almacenamiento automatizado en Cloud Storage de cada mensaje crudo para auditoría y recuperación ante desastres.
+* Normalización Automática de Esquemas: Uso de la integración nativa entre Pub/Sub y BigQuery para transformar JSONs dinámicos en tablas SQL estructuradas.
+* Aislamiento de Entorno: Configuración técnica ejecutada en un entorno virtual (venv_sd) para asegurar la portabilidad y evitar conflictos de dependencias.
+* Gobernanza de Seguridad con IAM: Control de acceso granular bajo el principio de menor privilegio para la comunicación segura entre servicios.
