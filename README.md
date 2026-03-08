@@ -38,3 +38,9 @@ Como etapa final del pipeline, se implementó un Data Warehouse en BigQuery, est
 Una vez configurado el entorno virtual (venv_sd), se procedió a la integración del script de Python con la infraestructura de GCP. Se actualizó el código con el Topic ID correspondiente de Cloud Pub/Sub y se ejecutó el proceso para iniciar la ingesta de datos financieros en tiempo real hacia la nube.
 
 <img width="2548" height="1441" alt="image" src="https://github.com/user-attachments/assets/34379052-46ba-4edc-a6bd-5558545803f8" />
+
+## Visualización de la Capa Gold (Looker Studio):
+
+Los datos refinados en el Data Warehouse son consumidos por Looker Studio para representar la "Capa Gold" de nuestra arquitectura. Este entorno de visualización se conecta de forma nativa a BigQuery, permitiendo monitorear tendencias históricas y fluctuaciones actuales de los activos mediante gráficos de series temporales y KPIs de rendimiento automatizados.
+
+<img width="2531" height="1230" alt="image" src="https://github.com/user-attachments/assets/dc4833c4-91e7-47e4-ac64-be1aa457068b" />
